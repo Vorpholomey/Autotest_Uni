@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="autotests-ui" />
+        <module name="dictionary-service-autotests-ui" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Autotest_Uni" target="19" />
+      <module name="autotests-ui" target="19" />
       <module name="dictionaryservice-autotests-ui" target="19" />
     </bytecodeTargetLevel>
   </component>
