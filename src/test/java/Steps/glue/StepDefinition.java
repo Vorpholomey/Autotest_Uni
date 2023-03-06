@@ -19,7 +19,7 @@ public class StepDefinition {
 
     @Когда("Открываем админпанель и авторизовываемся")
     public void открываем_админпанель_и_авторизовываемся() {
-        Configuration.headless = true;
+        Configuration.headless = false;
         open("http://192.168.100.39/");
         $(By.id("username")).setValue("rzhulin");
         $(By.id("password")).setValue("voodoo");
