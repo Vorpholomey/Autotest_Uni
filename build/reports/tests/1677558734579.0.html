@@ -1,0 +1,916 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юниграф.Справочники</title>
+    <script type="module" crossorigin="" src="/assets/index.733af3e4.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/assets/vendor.c92e1320.js">
+  <style type="text/css">.Accordion-module_accordion__wD27Q {
+  display: flex;
+  flex-direction: column;
+}
+
+.Accordion-module_summary__ORyIA {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.Accordion-module_toggleIcon__b--Wn {
+  color: #848e99;
+}
+
+.Accordion-module_toggleIconActive__ovq-c {
+  color: #0078ff;
+}
+
+.Accordion-module_title__-9-np {
+  color: #373e51;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-left: 4px;
+}
+
+.Accordion-module_titleActive__3c8vi {
+  color: #0078ff;
+}
+
+.Accordion-module_content__RyBzl {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+}
+
+.Accordion-module_titleActive__3c8vi {
+  color: #0078ff;
+}</style><style type="text/css">.BasicTabs-module_basicTabs__gxc8X {
+  align-items: center;
+  border-bottom: 1px #e1e3ea solid;
+  display: flex;
+  gap: 24px;
+  padding: 0 48px;
+  width: 100%;
+}
+
+.BasicTabs-module_tabs__woFbF {
+  color: #848e99;
+  cursor: pointer;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 20px 0;
+}
+.BasicTabs-module_tabs__woFbF:hover {
+  color: #373e51;
+}
+
+.BasicTabs-module_active__YBk6F {
+  border-bottom: 2px #0078ff solid;
+  color: #0078ff;
+  padding-bottom: 18px;
+}
+.BasicTabs-module_active__YBk6F:hover {
+  color: #0078ff;
+}</style><style type="text/css">.TextField-module_textField__vShN4 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.TextField-module_textField__vShN4 label {
+  color: #373e51;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.TextField-module_standardDisabled__rqtOB {
+  background: #fff !important;
+}
+.TextField-module_standardDisabled__rqtOB:hover {
+  background: #fff !important;
+}
+.TextField-module_standardDisabled__rqtOB::before {
+  border-bottom: 1px #e1e3ea dashed !important;
+  transition: none !important;
+}
+.TextField-module_standardDisabled__rqtOB::after {
+  border-bottom: 1px #e1e3ea dashed !important;
+  transition: none !important;
+}
+
+.TextField-module_standardError__hLoFR {
+  background: #fff !important;
+}
+.TextField-module_standardError__hLoFR:hover {
+  background: #fff !important;
+}
+.TextField-module_standardError__hLoFR::before {
+  border-bottom: 2px #ed0a34 solid !important;
+  transition: none !important;
+}
+.TextField-module_standardError__hLoFR::after {
+  border-bottom: 2px #ed0a34 solid !important;
+  transition: none !important;
+}
+
+.TextField-module_filledDisabled__sfBa2 {
+  background: #f3f7fb !important;
+}
+.TextField-module_filledDisabled__sfBa2:hover {
+  background: #f3f7fb !important;
+}
+.TextField-module_filledDisabled__sfBa2::before {
+  border-bottom: 1px #e1e3ea dashed !important;
+  transition: none !important;
+}
+.TextField-module_filledDisabled__sfBa2::after {
+  border-bottom: 1px #e1e3ea dashed !important;
+  transition: none !important;
+}
+
+.TextField-module_filledError__cSH6n {
+  background: #f3f7fb !important;
+}
+.TextField-module_filledError__cSH6n:hover {
+  background: #f3f7fb !important;
+}
+.TextField-module_filledError__cSH6n::before {
+  border-bottom: 2px #ed0a34 solid !important;
+  transition: none !important;
+}
+.TextField-module_filledError__cSH6n::after {
+  border-bottom: 2px #ed0a34 solid !important;
+  transition: none !important;
+}
+
+.TextField-module_filledHasValue__zKgUj {
+  background: #f3f7fb !important;
+}
+.TextField-module_filledHasValue__zKgUj:hover {
+  background: #f3f7fb !important;
+}
+.TextField-module_filledHasValue__zKgUj:hover::before {
+  border-bottom: 1px #373e51 solid !important;
+}
+.TextField-module_filledHasValue__zKgUj::before {
+  border-bottom: 1px #373e51 solid !important;
+}
+.TextField-module_filledHasValue__zKgUj::after {
+  border-bottom: 1px #373e51 solid !important;
+}
+
+.TextField-module_filled__ryn-r {
+  background: #f3f7fb !important;
+}
+.TextField-module_filled__ryn-r:hover {
+  background: #f3f7fb !important;
+}
+.TextField-module_filled__ryn-r:hover::before {
+  border-bottom: 2px #373e51 solid !important;
+}
+.TextField-module_filled__ryn-r::before {
+  border-bottom: 1px #848e99 solid !important;
+  transition: none !important;
+}
+.TextField-module_filled__ryn-r::after {
+  border-bottom: 2px #0078ff solid !important;
+  transition: none !important;
+}
+
+.TextField-module_standardHasValue__OFaYd {
+  background: #fff !important;
+}
+.TextField-module_standardHasValue__OFaYd:hover {
+  background: #fff !important;
+}
+.TextField-module_standardHasValue__OFaYd:hover::before {
+  border-bottom: 1px #373e51 solid !important;
+}
+.TextField-module_standardHasValue__OFaYd::before {
+  border-bottom: 1px #373e51 solid !important;
+}
+.TextField-module_standardHasValue__OFaYd::after {
+  border-bottom: 1px #373e51 solid !important;
+}
+
+.TextField-module_standard__9eS4R {
+  background: #fff !important;
+}
+.TextField-module_standard__9eS4R:hover {
+  background: #fff !important;
+}
+.TextField-module_standard__9eS4R:hover::before {
+  border-bottom: 2px #373e51 solid !important;
+}
+.TextField-module_standard__9eS4R::before {
+  border-bottom: 1px #848e99 solid !important;
+  transition: none !important;
+}
+.TextField-module_standard__9eS4R::after {
+  border-bottom: 2px #0078ff solid !important;
+  transition: none !important;
+}</style><style type="text/css">.Chip-module_chip__3ih75 {
+  color: #fff;
+  cursor: pointer;
+  font-family: "Inter";
+  font-weight: 400;
+}
+.Chip-module_chip__3ih75:hover {
+  opacity: 0.8;
+}
+
+.Chip-module_blue__YtU8e {
+  background: #0065d8;
+}
+
+.Chip-module_red__GaA6T {
+  background: #ed0a34;
+}
+
+.Chip-module_green__eagzP {
+  background: #4c9c67;
+}
+
+.Chip-module_sand__HY0p9 {
+  background: #e6ac68;
+}
+
+.Chip-module_gray__T--7A {
+  background: #c6cacf;
+}
+
+.Chip-module_medium__NEvpr {
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  font-size: 12px;
+  gap: 4px;
+  line-height: 18px;
+  padding: 3px 12px;
+}
+
+.Chip-module_big__TEbkn {
+  align-items: center;
+  border-radius: 16px;
+  display: flex;
+  font-size: 14px;
+  gap: 6px;
+  line-height: 20px;
+  padding: 6px 16px;
+}</style><style type="text/css">.Count-module_count__LcMY0 {
+  align-items: center;
+  background: #e1e3ea;
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: #373e51;
+  display: flex;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 18px;
+  min-width: 20px;
+  padding: 1px 6px;
+}
+
+.Count-module_active__FcFag {
+  background: #0078ff;
+  color: #fff;
+}</style><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.ContextMenu-module_ContextMenu__Vaym5 {
+  font-family: "Inter";
+}
+
+.ContextMenu-module_menu__LO2iO {
+  padding: 16px !important;
+}
+
+.ContextMenu-module_menuItem__mPokL {
+  background: #e1e3ea;
+  border-radius: 8px;
+  color: #373e51;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 4px;
+  padding: 12px 16px;
+}
+
+.ContextMenu-module_iconButtonRotate__5DJSZ {
+  transform: rotate(90deg);
+}
+
+.ContextMenu-module_icon__8r3-l {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 0;
+}</style><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.Pagination-module_pagination__Kih79 {
+  align-items: center;
+  border-bottom: 1px solid #f3f7fb;
+  border-left: 1px solid #f3f7fb;
+  border-right: 1px solid #f3f7fb;
+  color: #848e99;
+  display: flex;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: space-between;
+  line-height: 20px;
+}
+
+.Pagination-module_showMore__XokcW {
+  color: #0065d8;
+  cursor: pointer;
+}
+.Pagination-module_showMore__XokcW:hover {
+  opacity: 0.8;
+}</style><style type="text/css">.DataGridCustom-module_dataGridPagination__13Z7y {
+  padding: 8px 24px;
+}</style><style type="text/css">.DatePicker-module_DatePicker__TxraC {
+  min-width: 320px;
+  width: 100%;
+}</style><style type="text/css">.Logo-module_Logo__aXN0n {
+  background: #373e51;
+  display: flex;
+  max-width: 296px;
+  min-height: 48px;
+  overflow: hidden;
+  padding: 20px 52px 20px 48px;
+  position: relative;
+}
+
+.Logo-module_LogoDefaultCropped__20H-u {
+  background: #373e51;
+  max-height: 40px;
+  max-width: 40px;
+  padding: 20px;
+}
+
+.Logo-module_LogoAdmin__STpDP {
+  background: #0065d8;
+}
+
+.Logo-module_LogoAdminCropped__EdafG {
+  background: #0065d8;
+  max-height: 40px;
+  max-width: 40px;
+  padding: 20px;
+}
+
+.Logo-module_LogoAuth__3r-BO {
+  background: transparent;
+  max-width: 370px;
+  min-height: 60px;
+  padding: 0 65px;
+}
+
+.Logo-module_content__YPVRb {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.Logo-module_svg__hUVLo {
+  color: #fff;
+}
+
+.Logo-module_title__zE9DH {
+  color: #fff;
+  margin-left: 12px;
+}
+
+.Logo-module_svgAuth__nE47C {
+  color: #e30613;
+  height: 60px;
+  width: 60px;
+}
+
+.Logo-module_svgAuth__nE47C path {
+  transform: scale(1.5);
+}
+
+.Logo-module_titleAuth__DTWRN {
+  color: #e30613;
+  margin-left: 15px;
+}
+
+.Logo-module_admin__p2yqN {
+  background: #0078ff;
+  color: #fff;
+  cursor: default;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  margin-top: -46px;
+  padding: 6px 18px;
+  position: absolute;
+  right: -25px;
+  top: 87%;
+  transform: rotate(-90deg);
+}</style><style type="text/css">.Loader-module_ldsRoller__hkxTq {
+  display: inline-block;
+  height: 80px;
+  position: relative;
+  width: 80px;
+}
+
+.Loader-module_ldsRollerItem__ltIet {
+  animation: Loader-module_ldsRoller__hkxTq 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  background: black;
+  transform-origin: 40px 40px;
+}
+
+.Loader-module_ldsRollerItem__ltIet::after {
+  background: inherit;
+  border-radius: 50%;
+  content: " ";
+  display: block;
+  height: 7px;
+  margin: -4px 0 0 -4px;
+  position: absolute;
+  width: 7px;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(1)::after {
+  left: 63px;
+  top: 63px;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(2)::after {
+  left: 56px;
+  top: 68px;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(3)::after {
+  left: 48px;
+  top: 71px;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(4)::after {
+  left: 40px;
+  top: 72px;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(5)::after {
+  left: 32px;
+  top: 71px;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(6)::after {
+  left: 24px;
+  top: 68px;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(7)::after {
+  left: 17px;
+  top: 63px;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.Loader-module_ldsRollerItem__ltIet:nth-child(8)::after {
+  left: 12px;
+  top: 56px;
+}
+
+@keyframes Loader-module_ldsRoller__hkxTq {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}</style><style type="text/css">.Modal-module_modal__yNG-7 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 80vh;
+  overflow: auto;
+  padding: 0 40px 36px;
+  scrollbar-color: #848e99 #e1e3ea;
+  scrollbar-width: 6px;
+}
+.Modal-module_modal__yNG-7::-webkit-scrollbar {
+  position: absolute;
+  width: 6px;
+}
+.Modal-module_modal__yNG-7::-webkit-scrollbar-thumb {
+  background-color: #848e99;
+  border-radius: 3px;
+}
+.Modal-module_modal__yNG-7::-webkit-scrollbar-track {
+  background: #e1e3ea;
+}
+
+.Modal-module_modalContent__6Cgb1 {
+  background-color: #fff;
+  border: 0;
+  border-radius: 16px;
+  left: 50%;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+
+.Modal-module_modalContentFullSize__X8fN6 {
+  height: 100%;
+  width: 100%;
+}
+
+.Modal-module_positionTop__16KuB {
+  top: 25%;
+}
+
+.Modal-module_title__vOhPA {
+  align-items: center;
+  background: #fff;
+  color: #373e51;
+  display: flex;
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 600;
+  justify-content: space-between;
+  left: 40px;
+  line-height: 28px;
+  padding-bottom: 24px;
+  padding-top: 36px;
+  right: 40px;
+  top: 0;
+  z-index: 10;
+}
+
+.Modal-module_icon__tvJTB {
+  color: #848e99;
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+  top: 16px;
+  z-index: 1;
+}
+.Modal-module_icon__tvJTB:hover {
+  opacity: 0.8;
+}
+
+.Modal-module_fullSizeBtn__CwljZ {
+  color: #848e99;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0;
+  position: absolute;
+  right: 52px;
+  top: 16px;
+  z-index: 10;
+}
+.Modal-module_fullSizeBtn__CwljZ:hover {
+  opacity: 0.8;
+}
+
+.Modal-module_footer__Oyz-R {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding-top: 36px;
+}</style><style type="text/css">.Marker-module_Marker__tBPAU {
+  border-radius: 4px;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 2px 4px;
+}
+
+.Marker-module_gray__ZY3gg {
+  background-color: #e1e3ea;
+  color: #848e99;
+}
+
+.Marker-module_green__DKeGc {
+  background: #4c9c67;
+  color: #fff;
+}
+
+.Marker-module_blue__fiqvc {
+  background: #dff0ff;
+  color: #0078ff;
+}</style><style type="text/css">.SecondaryTabs-module_secondaryTabs__oaOZI {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+}
+
+.SecondaryTabs-module_tabs__YZlwf {
+  align-items: center;
+  background: #f3f7fb;
+  border-radius: 6px;
+  color: #848e99;
+  cursor: pointer;
+  display: flex;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  gap: 6px;
+  line-height: 24px;
+  padding: 6px 16px;
+}
+.SecondaryTabs-module_tabs__YZlwf:hover {
+  opacity: 0.8;
+}
+
+.SecondaryTabs-module_active__zrQfc {
+  border: 1px #0078ff solid;
+  color: #0078ff;
+}
+.SecondaryTabs-module_active__zrQfc:hover {
+  opacity: 1;
+}</style><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.Typography-module_Typography__WmC-y {
+  color: #373e51;
+  font-family: "Inter";
+  font-style: normal;
+}</style><style type="text/css">.DatePickerRange-module_line__wD9IY {
+  background-color: #848e99;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  z-index: 2;
+}
+
+.DatePickerRange-module_container__ir9s1 {
+  display: flex;
+  position: relative;
+}</style><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.Filter-module_defaultContainer__dI-0l {
+  box-sizing: border-box;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: 396px;
+  transition: 0.5s ease;
+  width: 396px;
+}
+
+.Filter-module_hiddenContainer__Dp-2E {
+  min-width: 80px;
+  width: 80px;
+}
+
+.Filter-module_logo__GqFhu {
+  box-sizing: border-box;
+  min-width: 100%;
+  transition: 0.5s ease;
+  width: 100%;
+}
+
+.Filter-module_logoBackground__VFmES {
+  background: #f3f7fb;
+  width: 100%;
+}
+
+.Filter-module_logoAdminNoLabel__30Dyu {
+  display: none;
+}
+
+.Filter-module_logoCropped__AfejX {
+  min-width: 80px;
+  padding: 20px;
+  transition: 0.5s ease;
+  width: 80px;
+}
+
+.Filter-module_logoCropped__AfejX svg:last-child {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.Filter-module_filterContainer__uStC2 {
+  background: #f3f7fb;
+  border-right: 1px solid #e1e3ea;
+  box-sizing: border-box;
+  display: grid;
+  font-family: "Inter";
+  grid-template-areas: "header" "content" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px calc(100vh - 80px - 60px - 80px) 80px;
+  max-height: calc(100vh - 80px);
+  min-width: 100%;
+  overflow: hidden;
+  transition: 0.5s ease;
+  width: 100%;
+}
+
+.Filter-module_filterContainerHidden__LdKYJ {
+  animation: Filter-module_slideout__n-FGB;
+  animation-duration: 0.5s;
+  border-right: 0;
+  min-width: 80px;
+  transition: 0.5s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 80px;
+}
+
+.Filter-module_header__Ycsmb {
+  align-items: center;
+  border-bottom: 1px solid #e1e3ea;
+  display: flex;
+  grid-area: header;
+  justify-content: space-between;
+  padding: 18px 24px 18px 10px;
+}
+
+.Filter-module_headerTitle__AuAYN {
+  align-items: center;
+  color: #373e51;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 4px;
+  line-height: 24px;
+  margin-left: 10px;
+  transition: 0.5s ease;
+}
+
+.Filter-module_headerCount__sZlA- {
+  color: #848e99;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: 0.5s ease;
+  white-space: nowrap;
+}
+
+.Filter-module_iconBlock__BY3-8 {
+  height: 24px;
+  position: relative;
+}
+
+.Filter-module_active__R-XKV {
+  background: #0078ff;
+  border-radius: 10px;
+  height: 6px;
+  position: absolute;
+  right: -3px;
+  top: 0;
+  width: 6px;
+}
+
+.Filter-module_headerLeft__N4N6r {
+  align-items: center;
+  display: flex;
+  margin-left: 0;
+  transition: 0.5s ease;
+}
+
+.Filter-module_headerLeftActive__jkMaw {
+  margin-left: 18px;
+}
+
+.Filter-module_arrowIcon__Z8pDT {
+  color: #848e99;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.Filter-module_arrowIconRotated__3FFS6 {
+  margin-left: 0;
+  transform: rotate(180deg);
+}
+
+.Filter-module_content__-V-34 {
+  grid-area: content;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 24px 24px 0 44px;
+  transition: 0.5s ease;
+}
+
+.Filter-module_footer__ESuhr {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  grid-area: footer;
+  justify-content: center;
+  padding: 16px 24px 16px 44px;
+  transition: 0.5s ease;
+}
+
+.Filter-module_nav__a9AtR {
+  grid-area: nav;
+}
+
+.Filter-module_button__wAFbB {
+  width: 100%;
+}
+
+.Filter-module_buttonOutlined__Yh0yF:hover {
+  border: 1px solid #0065d8 !important;
+}
+
+.Filter-module_buttonContained__D-Cxx:hover {
+  background-color: #0065d8 !important;
+}
+
+.Filter-module_hidden__uJ6BF {
+  opacity: 0;
+}</style><style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.TechScreen-module_Tech__T58Wy {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.TechScreen-module_error__vUaWL {
+  color: #c8e5ff;
+  font-family: "Inter";
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 155px;
+}
+
+.TechScreen-module_title__z-8YM {
+  color: #373e51;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 8px 0 4px;
+}
+
+.TechScreen-module_subTitle__wfsla {
+  color: #848e99;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.TechScreen-module_button__tG7q4 {
+  margin-top: 32px;
+}</style><style type="text/css">.CardCustom-module_Card__KROKC {
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+}</style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css" data-s=""></style><style id="muiDetectElementResize" type="text/css">@keyframes resizeanim { from { opacity: 0; } to { opacity: 0; } } .Mui-resizeTriggers { animation: 1ms resizeanim; visibility: hidden; opacity: 0; } .Mui-resizeTriggers, .Mui-resizeTriggers > div, .contract-trigger:before { content: " "; display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; z-index: -1; } .Mui-resizeTriggers > div { background: #eee; overflow: auto; } .contract-trigger:before { width: 200%; height: 200%; }</style></head>
+  <body>
+    <div id="root"><div class="MuiBox-root css-k008qs"><header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-168noda"><div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-i6s8oy"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-q6oun" tabindex="0" type="button" aria-label="open drawer"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><div class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-kve784">Юниграф.Справочники</div><p class="MuiTypography-root MuiTypography-body1 css-1qhzrxj">rzhulin</p><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeLarge css-jziuck" tabindex="0" type="button" aria-label="menu"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LogoutIcon"><path d="m17 7-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></header><div class="MuiDrawer-root MuiDrawer-docked css-bpnhhg"><div class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1l8j5k8"><div class="css-1r9jet7"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ChevronLeftIcon"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div><hr class="MuiDivider-root MuiDivider-fullWidth css-39bbo6"><ul class="MuiList-root MuiList-padding css-1ontqvh"><li class="MuiListItem-root MuiListItem-gutters css-10pxy2k"><div class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-kue437" tabindex="0" role="button"><div class="MuiListItemIcon-root css-10z9ko2"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LibraryBooksIcon"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"></path></svg></div><div class="MuiListItemText-root css-d9387g"><span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-yb0lig">Справочники</span></div><span class="MuiTouchRipple-root css-w0pj6f"></span></div></li></ul></div></div><main class="MuiBox-root css-i9gxme"><div class="css-1r9jet7"></div><div class="MuiBox-root css-i9gxme"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-tuxzvu"><div class="MuiBox-root css-8atqhb"><div class="MuiBox-root css-1gsv261"><div class="MuiTabs-root css-orq8zk"><div class="MuiTabs-scroller MuiTabs-fixed css-1anid1y" style="overflow: hidden; margin-bottom: 0px;"><div class="MuiTabs-flexContainer css-k008qs" role="tablist"><button class="MuiButtonBase-root MuiTab-root MuiTab-labelIcon MuiTab-textColorPrimary Mui-selected css-1atmgwh" tabindex="0" type="button" role="tab" aria-selected="true" aria-controls="mui-p-70586-P-CURRENT" id="mui-p-70586-T-CURRENT"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTab-iconWrapper css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LibraryBooksIcon"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"></path></svg>Метаданные<span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiTab-root MuiTab-labelIcon MuiTab-textColorPrimary css-1atmgwh" tabindex="-1" type="button" role="tab" aria-selected="false" aria-controls="mui-p-70586-P-DATASET" id="mui-p-70586-T-DATASET"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTab-iconWrapper css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DatasetIcon"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-8 14H7v-4h4v4zm0-6H7V7h4v4zm6 6h-4v-4h4v4zm0-6h-4V7h4v4z"></path></svg>Данные<span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiTab-root MuiTab-labelIcon MuiTab-textColorPrimary css-1atmgwh" tabindex="-1" type="button" role="tab" aria-selected="false" aria-controls="mui-p-70586-P-DOMAINS" id="mui-p-70586-T-DOMAINS"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTab-iconWrapper css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DnsIcon"><path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 19c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM20 3H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></svg>Домены<span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiTab-root MuiTab-labelIcon MuiTab-textColorPrimary css-1atmgwh" tabindex="-1" type="button" role="tab" aria-selected="false" aria-controls="mui-p-70586-P-SCHEDULE" id="mui-p-70586-T-SCHEDULE"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTab-iconWrapper css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ScheduleIcon"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path></svg>Расписание<span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiTab-root MuiTab-labelIcon MuiTab-textColorPrimary css-1atmgwh" tabindex="-1" type="button" role="tab" aria-selected="false" aria-controls="mui-p-70586-P-EXT" id="mui-p-70586-T-EXT"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTab-iconWrapper css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloudUploadIcon"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path></svg>Внешние справочники<span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiTab-root MuiTab-labelIcon MuiTab-textColorPrimary css-1atmgwh" tabindex="-1" type="button" role="tab" aria-selected="false" aria-controls="mui-p-70586-P-LOAD" id="mui-p-70586-T-LOAD"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTab-iconWrapper css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloudUploadIcon"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path></svg>Загрузки<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div><span class="MuiTabs-indicator css-ttwr4n" style="left: 0px; width: 167.672px;"></span></div></div></div><div class="MuiTabPanel-root css-19kzrtu" role="tabpanel" aria-labelledby="mui-p-70586-T-CURRENT" id="mui-p-70586-P-CURRENT"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-tuxzvu"><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-o0rlmm"><div class="MuiBox-root css-0"><div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-p0rm37" data-shrink="false">Домен</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-10kz0jj"><div tabindex="0" role="button" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="mui-component-select-domainId" id="mui-component-select-domainId" class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-qiwgdb"><span class="notranslate">​</span></div><input name="domainId" aria-hidden="true" tabindex="-1" class="MuiSelect-nativeInput css-1k3x8v3" value=""><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1636szt" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon"><path d="M7 10l5 5 5-5z"></path></svg><fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac"><legend class="css-yjsfm1"><span>Домен</span></legend></fieldset></div></div><div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye" style="margin: 10px 0px 0px;"><div class="MuiFormControl-root MuiTextField-root css-i44wyl"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-p0rm37" data-shrink="false" for=":r0:" id=":r0:-label">table</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1v4ccyo"><input aria-invalid="false" id=":r0:" name="tableName" type="text" class="MuiInputBase-input MuiOutlinedInput-input css-1x5jdmq" value=""><fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac"><legend class="css-yjsfm1"><span>table</span></legend></fieldset></div></div></div><div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye" style="margin: 10px 0px 0px;"><div class="MuiFormControl-root MuiTextField-root css-i44wyl"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-p0rm37" data-shrink="false" for=":r1:" id=":r1:-label">code</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1v4ccyo"><input aria-invalid="false" id=":r1:" name="code" type="text" class="MuiInputBase-input MuiOutlinedInput-input css-1x5jdmq" value=""><fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac"><legend class="css-yjsfm1"><span>code</span></legend></fieldset></div></div></div><div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye" style="margin: 10px 0px 0px;"><div class="MuiFormControl-root MuiTextField-root css-i44wyl"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-p0rm37" data-shrink="false" for=":r2:" id=":r2:-label">shortName</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1v4ccyo"><input aria-invalid="false" id=":r2:" name="shortName" type="text" class="MuiInputBase-input MuiOutlinedInput-input css-1x5jdmq" value=""><fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac"><legend class="css-yjsfm1"><span>shortName</span></legend></fieldset></div></div></div><div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye" style="margin: 10px 0px 0px;"><div class="MuiFormControl-root MuiTextField-root css-i44wyl"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-p0rm37" data-shrink="false" for=":r3:" id=":r3:-label">urn</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1v4ccyo"><input aria-invalid="false" id=":r3:" name="urn" type="text" class="MuiInputBase-input MuiOutlinedInput-input css-1x5jdmq" value=""><fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac"><legend class="css-yjsfm1"><span>urn</span></legend></fieldset></div></div></div><div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye" style="margin: 10px 0px 0px;"><div class="MuiFormControl-root MuiTextField-root css-i44wyl"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-p0rm37" data-shrink="false" for=":r4:" id=":r4:-label">version</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1v4ccyo"><input aria-invalid="false" id=":r4:" name="version" type="text" class="MuiInputBase-input MuiOutlinedInput-input css-1x5jdmq" value=""><fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac"><legend class="css-yjsfm1"><span>version</span></legend></fieldset></div></div></div><div class="css-1ktqnkn"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1hw9j7s" tabindex="0" type="button"><span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SearchIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></span>Найти<span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-79xub" tabindex="0" type="button">Очистить<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k"><div class="css-ss5jfa"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1hw9j7s" tabindex="0" type="button"><span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="AddIcon"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></svg></span>Справочник<span class="MuiTouchRipple-root css-w0pj6f"></span></button><label class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1hw9j7s" tabindex="0" role="button"><span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FileUploadIcon"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"></path></svg></span>Импорт<input hidden="" accept="application/json" type="file"><span class="MuiTouchRipple-root css-w0pj6f"></span></label></div><div class="MuiDataGrid-root MuiDataGrid-root--densityStandard css-iclwpf" role="grid" aria-colcount="9" aria-rowcount="697" aria-multiselectable="false" style="height: 400px; margin: 0px 10px 10px;"><div><div></div></div><div class="MuiDataGrid-main css-opb0c2"><div class="MuiDataGrid-columnHeaders css-1au5wsq" style="min-height: 56px; max-height: 56px; line-height: 56px;"><div class="MuiDataGrid-columnHeadersInner MuiDataGrid-columnHeadersInner--scrollable css-vcjdx3" role="rowgroup" style="transform: translate3d(0px, 0px, 0px);"><div role="row" aria-rowindex="1" class="css-k008qs"><div class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--alignCenter" role="columnheader" tabindex="0" aria-colindex="1" aria-sort="none" aria-label="" data-field="actions" style="height: 56px; width: 200px; min-width: 200px; max-width: 200px;"><div class="MuiDataGrid-columnHeaderDraggableContainer" draggable="false"><div class="MuiDataGrid-columnHeaderTitleContainer"><div class="MuiDataGrid-columnHeaderTitleContainerContent"><div class="MuiDataGrid-columnHeaderTitle css-cc8tf1" aria-label=""></div></div></div></div><div class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight" style="min-height: 56px; opacity: 1;"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SeparatorIcon"><path d="M11 19V5h2v14z"></path></svg></div></div><div class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable" role="columnheader" tabindex="-1" aria-colindex="2" aria-sort="none" aria-label="id" data-field="id" style="height: 56px; width: 100px; min-width: 100px; max-width: 100px;"><div class="MuiDataGrid-columnHeaderDraggableContainer" draggable="false"><div class="MuiDataGrid-columnHeaderTitleContainer"><div class="MuiDataGrid-columnHeaderTitleContainerContent"><div class="MuiDataGrid-columnHeaderTitle css-cc8tf1" aria-label="">id</div></div><div class="MuiDataGrid-iconButtonContainer css-cp5hn7"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" aria-label="Sort" title="Sort"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall MuiDataGrid-sortIcon css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowUpwardIcon"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-menuIcon"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1j7qk7u" tabindex="-1" type="button" aria-label="Menu" title="Menu" aria-haspopup="true" aria-controls=":rb:" id=":rc:"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="TripleDotsVerticalIcon"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight" style="min-height: 56px; opacity: 1;"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SeparatorIcon"><path d="M11 19V5h2v14z"></path></svg></div></div><div class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable" role="columnheader" tabindex="-1" aria-colindex="3" aria-sort="none" aria-label="domainId" data-field="domainId" style="height: 56px; width: 100px; min-width: 100px; max-width: 100px;"><div class="MuiDataGrid-columnHeaderDraggableContainer" draggable="false"><div class="MuiDataGrid-columnHeaderTitleContainer"><div class="MuiDataGrid-columnHeaderTitleContainerContent"><div class="MuiDataGrid-columnHeaderTitle css-cc8tf1" aria-label="">domainId</div></div><div class="MuiDataGrid-iconButtonContainer css-cp5hn7"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" aria-label="Sort" title="Sort"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall MuiDataGrid-sortIcon css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowUpwardIcon"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-menuIcon"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1j7qk7u" tabindex="-1" type="button" aria-label="Menu" title="Menu" aria-haspopup="true" aria-controls=":re:" id=":rf:"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="TripleDotsVerticalIcon"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight" style="min-height: 56px; opacity: 1;"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SeparatorIcon"><path d="M11 19V5h2v14z"></path></svg></div></div><div class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable" role="columnheader" tabindex="-1" aria-colindex="4" aria-sort="none" aria-label="tableName" data-field="tableName" style="height: 56px; width: 400px; min-width: 400px; max-width: 400px;"><div class="MuiDataGrid-columnHeaderDraggableContainer" draggable="false"><div class="MuiDataGrid-columnHeaderTitleContainer"><div class="MuiDataGrid-columnHeaderTitleContainerContent"><div class="MuiDataGrid-columnHeaderTitle css-cc8tf1" aria-label="">tableName</div></div><div class="MuiDataGrid-iconButtonContainer css-cp5hn7"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" aria-label="Sort" title="Sort"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall MuiDataGrid-sortIcon css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowUpwardIcon"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-menuIcon"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1j7qk7u" tabindex="-1" type="button" aria-label="Menu" title="Menu" aria-haspopup="true" aria-controls=":rh:" id=":ri:"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="TripleDotsVerticalIcon"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight" style="min-height: 56px; opacity: 1;"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SeparatorIcon"><path d="M11 19V5h2v14z"></path></svg></div></div><div class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable" role="columnheader" tabindex="-1" aria-colindex="5" aria-sort="none" aria-label="shortName" data-field="shortName" style="height: 56px; width: 320px; min-width: 320px; max-width: 320px;"><div class="MuiDataGrid-columnHeaderDraggableContainer" draggable="false"><div class="MuiDataGrid-columnHeaderTitleContainer"><div class="MuiDataGrid-columnHeaderTitleContainerContent"><div class="MuiDataGrid-columnHeaderTitle css-cc8tf1" aria-label="">shortName</div></div><div class="MuiDataGrid-iconButtonContainer css-cp5hn7"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" aria-label="Sort" title="Sort"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall MuiDataGrid-sortIcon css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowUpwardIcon"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-menuIcon"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1j7qk7u" tabindex="-1" type="button" aria-label="Menu" title="Menu" aria-haspopup="true" aria-controls=":rk:" id=":rl:"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="TripleDotsVerticalIcon"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight" style="min-height: 56px; opacity: 1;"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SeparatorIcon"><path d="M11 19V5h2v14z"></path></svg></div></div><div class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable" role="columnheader" tabindex="-1" aria-colindex="6" aria-sort="none" aria-label="code" data-field="code" style="height: 56px; width: 220px; min-width: 220px; max-width: 220px;"><div class="MuiDataGrid-columnHeaderDraggableContainer" draggable="false"><div class="MuiDataGrid-columnHeaderTitleContainer"><div class="MuiDataGrid-columnHeaderTitleContainerContent"><div class="MuiDataGrid-columnHeaderTitle css-cc8tf1" aria-label="">code</div></div><div class="MuiDataGrid-iconButtonContainer css-cp5hn7"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" aria-label="Sort" title="Sort"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall MuiDataGrid-sortIcon css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowUpwardIcon"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-menuIcon"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1j7qk7u" tabindex="-1" type="button" aria-label="Menu" title="Menu" aria-haspopup="true" aria-controls=":rn:" id=":ro:"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="TripleDotsVerticalIcon"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight" style="min-height: 56px; opacity: 1;"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SeparatorIcon"><path d="M11 19V5h2v14z"></path></svg></div></div><div class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable" role="columnheader" tabindex="-1" aria-colindex="7" aria-sort="none" aria-label="version" data-field="version" style="height: 56px; width: 100px; min-width: 100px; max-width: 100px;"><div class="MuiDataGrid-columnHeaderDraggableContainer" draggable="false"><div class="MuiDataGrid-columnHeaderTitleContainer"><div class="MuiDataGrid-columnHeaderTitleContainerContent"><div class="MuiDataGrid-columnHeaderTitle css-cc8tf1" aria-label="">version</div></div><div class="MuiDataGrid-iconButtonContainer css-cp5hn7"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" aria-label="Sort" title="Sort"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall MuiDataGrid-sortIcon css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowUpwardIcon"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-menuIcon"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1j7qk7u" tabindex="-1" type="button" aria-label="Menu" title="Menu" aria-haspopup="true" aria-controls=":rq:" id=":rr:"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="TripleDotsVerticalIcon"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight" style="min-height: 56px; opacity: 1;"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SeparatorIcon"><path d="M11 19V5h2v14z"></path></svg></div></div><div class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable" role="columnheader" tabindex="-1" aria-colindex="8" aria-sort="none" aria-label="urn" data-field="urn" style="height: 56px; width: 200px; min-width: 200px; max-width: 200px;"><div class="MuiDataGrid-columnHeaderDraggableContainer" draggable="false"><div class="MuiDataGrid-columnHeaderTitleContainer"><div class="MuiDataGrid-columnHeaderTitleContainerContent"><div class="MuiDataGrid-columnHeaderTitle css-cc8tf1" aria-label="">urn</div></div><div class="MuiDataGrid-iconButtonContainer css-cp5hn7"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" aria-label="Sort" title="Sort"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall MuiDataGrid-sortIcon css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowUpwardIcon"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-menuIcon"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1j7qk7u" tabindex="-1" type="button" aria-label="Menu" title="Menu" aria-haspopup="true" aria-controls=":rt:" id=":ru:"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="TripleDotsVerticalIcon"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div><div class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--sideRight" style="min-height: 56px; opacity: 1;"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SeparatorIcon"><path d="M11 19V5h2v14z"></path></svg></div></div></div></div></div><div style="overflow: visible; height: 0px; width: 0px;"><div class="MuiDataGrid-virtualScroller css-1grl8tv" style="width: 1014px; height: 289px; margin-top: 56px;"><div class="MuiDataGrid-virtualScrollerContent MuiDataGrid-virtualScrollerContent--overflowed css-0" style="width: 1810px; height: 1300px; min-height: auto;"><div class="MuiDataGrid-virtualScrollerRenderZone css-1inm7gi" style="transform: translate3d(0px, 0px, 0px);"><div data-id="2652" data-rowindex="0" role="row" class="MuiDataGrid-row" aria-rowindex="2" aria-selected="false" style="max-height: 52px; min-height: 52px;"><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter" role="cell" data-field="actions" data-colindex="0" aria-colindex="1" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div role="menu" tabindex="-1" class="MuiDataGrid-actionsCell"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Просмотреть метаданные"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VisibilityIcon" aria-label="Просмотреть метаданные"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Копировать"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon" aria-label="Копировать"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="К связанным справочникам"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkIcon" aria-label="К связанным справочникам"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" disabled="" role="menuitem" aria-label="Удалить"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DeleteIcon" aria-label="Удалить"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></svg></button></div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="id" data-colindex="1" aria-colindex="2" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">2652</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="domainId" data-colindex="2" aria-colindex="3" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="tableName" data-colindex="3" aria-colindex="4" aria-colspan="1" tabindex="-1" style="min-width: 400px; max-width: 400px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">rmz__1_2_643_5_1_13_13_11_1009__all</div></div><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="shortName" data-colindex="4" aria-colindex="5" aria-colspan="1" tabindex="-1" style="min-width: 320px; max-width: 320px; min-height: 52px; max-height: 52px;"><p title="Виды медицинских направлений" style="text-align: start;">Виды медицинских направлений</p></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="code" data-colindex="5" aria-colindex="6" aria-colspan="1" tabindex="-1" style="min-width: 220px; max-width: 220px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1.2.643.5.1.13.13.11.1009</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="version" data-colindex="6" aria-colindex="7" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">all</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="urn" data-colindex="7" aria-colindex="8" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">urn:rmz:1.2.643.5.1.13.13.11.1009</div></div></div><div data-id="2653" data-rowindex="1" role="row" class="MuiDataGrid-row" aria-rowindex="3" aria-selected="false" style="max-height: 52px; min-height: 52px;"><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter" role="cell" data-field="actions" data-colindex="0" aria-colindex="1" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div role="menu" tabindex="-1" class="MuiDataGrid-actionsCell"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Просмотреть метаданные"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VisibilityIcon" aria-label="Просмотреть метаданные"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Копировать"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon" aria-label="Копировать"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="К связанным справочникам"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkIcon" aria-label="К связанным справочникам"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" disabled="" role="menuitem" aria-label="Удалить"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DeleteIcon" aria-label="Удалить"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></svg></button></div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="id" data-colindex="1" aria-colindex="2" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">2653</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="domainId" data-colindex="2" aria-colindex="3" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="tableName" data-colindex="3" aria-colindex="4" aria-colspan="1" tabindex="-1" style="min-width: 400px; max-width: 400px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">rmz__1_2_643_5_1_13_13_11_1009__2_5</div></div><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="shortName" data-colindex="4" aria-colindex="5" aria-colspan="1" tabindex="-1" style="min-width: 320px; max-width: 320px; min-height: 52px; max-height: 52px;"><p title="Виды медицинских направлений" style="text-align: start;">Виды медицинских направлений</p></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="code" data-colindex="5" aria-colindex="6" aria-colspan="1" tabindex="-1" style="min-width: 220px; max-width: 220px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1.2.643.5.1.13.13.11.1009</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="version" data-colindex="6" aria-colindex="7" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">2.5</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="urn" data-colindex="7" aria-colindex="8" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">urn:rmz:1.2.643.5.1.13.13.11.1009</div></div></div><div data-id="2654" data-rowindex="2" role="row" class="MuiDataGrid-row" aria-rowindex="4" aria-selected="false" style="max-height: 52px; min-height: 52px;"><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter" role="cell" data-field="actions" data-colindex="0" aria-colindex="1" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div role="menu" tabindex="-1" class="MuiDataGrid-actionsCell"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Просмотреть метаданные"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VisibilityIcon" aria-label="Просмотреть метаданные"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Копировать"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon" aria-label="Копировать"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="К связанным справочникам"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkIcon" aria-label="К связанным справочникам"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" disabled="" role="menuitem" aria-label="Удалить"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DeleteIcon" aria-label="Удалить"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></svg></button></div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="id" data-colindex="1" aria-colindex="2" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">2654</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="domainId" data-colindex="2" aria-colindex="3" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="tableName" data-colindex="3" aria-colindex="4" aria-colspan="1" tabindex="-1" style="min-width: 400px; max-width: 400px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">rmz__1_2_643_5_1_13_13_99_2_262__all</div></div><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="shortName" data-colindex="4" aria-colindex="5" aria-colspan="1" tabindex="-1" style="min-width: 320px; max-width: 320px; min-height: 52px; max-height: 52px;"><p title="Витальные параметры" style="text-align: start;">Витальные параметры</p></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="code" data-colindex="5" aria-colindex="6" aria-colspan="1" tabindex="-1" style="min-width: 220px; max-width: 220px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1.2.643.5.1.13.13.99.2.262</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="version" data-colindex="6" aria-colindex="7" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">all</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="urn" data-colindex="7" aria-colindex="8" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">urn:rmz:1.2.643.5.1.13.13.99.2.262</div></div></div><div data-id="2655" data-rowindex="3" role="row" class="MuiDataGrid-row" aria-rowindex="5" aria-selected="false" style="max-height: 52px; min-height: 52px;"><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter" role="cell" data-field="actions" data-colindex="0" aria-colindex="1" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div role="menu" tabindex="-1" class="MuiDataGrid-actionsCell"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Просмотреть метаданные"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VisibilityIcon" aria-label="Просмотреть метаданные"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Копировать"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon" aria-label="Копировать"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="К связанным справочникам"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkIcon" aria-label="К связанным справочникам"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" disabled="" role="menuitem" aria-label="Удалить"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DeleteIcon" aria-label="Удалить"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></svg></button></div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="id" data-colindex="1" aria-colindex="2" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">2655</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="domainId" data-colindex="2" aria-colindex="3" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="tableName" data-colindex="3" aria-colindex="4" aria-colspan="1" tabindex="-1" style="min-width: 400px; max-width: 400px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">rmz__1_2_643_5_1_13_13_99_2_262__6_1</div></div><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="shortName" data-colindex="4" aria-colindex="5" aria-colspan="1" tabindex="-1" style="min-width: 320px; max-width: 320px; min-height: 52px; max-height: 52px;"><p title="Витальные параметры" style="text-align: start;">Витальные параметры</p></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="code" data-colindex="5" aria-colindex="6" aria-colspan="1" tabindex="-1" style="min-width: 220px; max-width: 220px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1.2.643.5.1.13.13.99.2.262</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="version" data-colindex="6" aria-colindex="7" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">6.1</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="urn" data-colindex="7" aria-colindex="8" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">urn:rmz:1.2.643.5.1.13.13.99.2.262</div></div></div><div data-id="2656" data-rowindex="4" role="row" class="MuiDataGrid-row" aria-rowindex="6" aria-selected="false" style="max-height: 52px; min-height: 52px;"><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter" role="cell" data-field="actions" data-colindex="0" aria-colindex="1" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div role="menu" tabindex="-1" class="MuiDataGrid-actionsCell"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Просмотреть метаданные"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VisibilityIcon" aria-label="Просмотреть метаданные"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Копировать"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon" aria-label="Копировать"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="К связанным справочникам"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkIcon" aria-label="К связанным справочникам"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" disabled="" role="menuitem" aria-label="Удалить"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DeleteIcon" aria-label="Удалить"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></svg></button></div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="id" data-colindex="1" aria-colindex="2" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">2656</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="domainId" data-colindex="2" aria-colindex="3" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="tableName" data-colindex="3" aria-colindex="4" aria-colspan="1" tabindex="-1" style="min-width: 400px; max-width: 400px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">rmz__1_2_643_5_1_13_13_11_1021__all</div></div><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="shortName" data-colindex="4" aria-colindex="5" aria-colspan="1" tabindex="-1" style="min-width: 320px; max-width: 320px; min-height: 52px; max-height: 52px;"><p title="Тип родственной связи" style="text-align: start;">Тип родственной связи</p></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="code" data-colindex="5" aria-colindex="6" aria-colspan="1" tabindex="-1" style="min-width: 220px; max-width: 220px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1.2.643.5.1.13.13.11.1021</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="version" data-colindex="6" aria-colindex="7" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">all</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="urn" data-colindex="7" aria-colindex="8" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">urn:rmz:1.2.643.5.1.13.13.11.1021</div></div></div><div data-id="2536" data-rowindex="5" role="row" class="MuiDataGrid-row" aria-rowindex="7" aria-selected="false" style="max-height: 52px; min-height: 52px;"><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter" role="cell" data-field="actions" data-colindex="0" aria-colindex="1" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div role="menu" tabindex="-1" class="MuiDataGrid-actionsCell"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Просмотреть метаданные"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VisibilityIcon" aria-label="Просмотреть метаданные"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Копировать"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon" aria-label="Копировать"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="К связанным справочникам"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkIcon" aria-label="К связанным справочникам"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" disabled="" role="menuitem" aria-label="Удалить"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DeleteIcon" aria-label="Удалить"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></svg></button></div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="id" data-colindex="1" aria-colindex="2" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">2536</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="domainId" data-colindex="2" aria-colindex="3" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">19</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="tableName" data-colindex="3" aria-colindex="4" aria-colspan="1" tabindex="-1" style="min-width: 400px; max-width: 400px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">mgfoms__mg001</div></div><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="shortName" data-colindex="4" aria-colindex="5" aria-colspan="1" tabindex="-1" style="min-width: 320px; max-width: 320px; min-height: 52px; max-height: 52px;"><p title="Классификатор услуг оказания медицинской помощи" style="text-align: start;">Классификатор услуг оказания медицинской помощи</p></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="code" data-colindex="5" aria-colindex="6" aria-colspan="1" tabindex="-1" style="min-width: 220px; max-width: 220px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">MG001</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="version" data-colindex="6" aria-colindex="7" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent"></div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="urn" data-colindex="7" aria-colindex="8" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">urn:mgfoms:MG001</div></div></div><div data-id="2657" data-rowindex="6" role="row" class="MuiDataGrid-row" aria-rowindex="8" aria-selected="false" style="max-height: 52px; min-height: 52px;"><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter" role="cell" data-field="actions" data-colindex="0" aria-colindex="1" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div role="menu" tabindex="-1" class="MuiDataGrid-actionsCell"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Просмотреть метаданные"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VisibilityIcon" aria-label="Просмотреть метаданные"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Копировать"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon" aria-label="Копировать"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="К связанным справочникам"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkIcon" aria-label="К связанным справочникам"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" disabled="" role="menuitem" aria-label="Удалить"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DeleteIcon" aria-label="Удалить"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></svg></button></div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="id" data-colindex="1" aria-colindex="2" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">2657</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="domainId" data-colindex="2" aria-colindex="3" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="tableName" data-colindex="3" aria-colindex="4" aria-colspan="1" tabindex="-1" style="min-width: 400px; max-width: 400px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">rmz__1_2_643_5_1_13_13_11_1021__1_1</div></div><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="shortName" data-colindex="4" aria-colindex="5" aria-colspan="1" tabindex="-1" style="min-width: 320px; max-width: 320px; min-height: 52px; max-height: 52px;"><p title="Тип родственной связи" style="text-align: start;">Тип родственной связи</p></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="code" data-colindex="5" aria-colindex="6" aria-colspan="1" tabindex="-1" style="min-width: 220px; max-width: 220px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1.2.643.5.1.13.13.11.1021</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="version" data-colindex="6" aria-colindex="7" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1.1</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="urn" data-colindex="7" aria-colindex="8" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">urn:rmz:1.2.643.5.1.13.13.11.1021</div></div></div><div data-id="2658" data-rowindex="7" role="row" class="MuiDataGrid-row" aria-rowindex="9" aria-selected="false" style="max-height: 52px; min-height: 52px;"><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter" role="cell" data-field="actions" data-colindex="0" aria-colindex="1" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div role="menu" tabindex="-1" class="MuiDataGrid-actionsCell"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Просмотреть метаданные"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VisibilityIcon" aria-label="Просмотреть метаданные"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Копировать"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon" aria-label="Копировать"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="К связанным справочникам"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkIcon" aria-label="К связанным справочникам"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" disabled="" role="menuitem" aria-label="Удалить"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DeleteIcon" aria-label="Удалить"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></svg></button></div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="id" data-colindex="1" aria-colindex="2" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">2658</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="domainId" data-colindex="2" aria-colindex="3" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="tableName" data-colindex="3" aria-colindex="4" aria-colspan="1" tabindex="-1" style="min-width: 400px; max-width: 400px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">rmz__1_2_643_5_1_13_13_11_1033__all</div></div><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="shortName" data-colindex="4" aria-colindex="5" aria-colspan="1" tabindex="-1" style="min-width: 320px; max-width: 320px; min-height: 52px; max-height: 52px;"><p title="Виды анестезии" style="text-align: start;">Виды анестезии</p></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="code" data-colindex="5" aria-colindex="6" aria-colspan="1" tabindex="-1" style="min-width: 220px; max-width: 220px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1.2.643.5.1.13.13.11.1033</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="version" data-colindex="6" aria-colindex="7" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">all</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="urn" data-colindex="7" aria-colindex="8" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">urn:rmz:1.2.643.5.1.13.13.11.1033</div></div></div><div data-id="2659" data-rowindex="8" role="row" class="MuiDataGrid-row" aria-rowindex="10" aria-selected="false" style="max-height: 52px; min-height: 52px;"><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textCenter" role="cell" data-field="actions" data-colindex="0" aria-colindex="1" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div role="menu" tabindex="-1" class="MuiDataGrid-actionsCell"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Просмотреть метаданные"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VisibilityIcon" aria-label="Просмотреть метаданные"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="Копировать"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon" aria-label="Копировать"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" role="menuitem" aria-label="К связанным справочникам"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkIcon" aria-label="К связанным справочникам"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeSmall css-1j7qk7u" tabindex="-1" type="button" disabled="" role="menuitem" aria-label="Удалить"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DeleteIcon" aria-label="Удалить"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></svg></button></div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="id" data-colindex="1" aria-colindex="2" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">2659</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="domainId" data-colindex="2" aria-colindex="3" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="tableName" data-colindex="3" aria-colindex="4" aria-colspan="1" tabindex="-1" style="min-width: 400px; max-width: 400px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">rmz__1_2_643_5_1_13_13_11_1033__4_1</div></div><div class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="shortName" data-colindex="4" aria-colindex="5" aria-colspan="1" tabindex="-1" style="min-width: 320px; max-width: 320px; min-height: 52px; max-height: 52px;"><p title="Виды анестезии" style="text-align: start;">Виды анестезии</p></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="code" data-colindex="5" aria-colindex="6" aria-colspan="1" tabindex="-1" style="min-width: 220px; max-width: 220px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">1.2.643.5.1.13.13.11.1033</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="version" data-colindex="6" aria-colindex="7" aria-colspan="1" tabindex="-1" style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">4.1</div></div><div class="MuiDataGrid-cell MuiDataGrid-cell--textLeft" role="cell" data-field="urn" data-colindex="7" aria-colindex="8" aria-colspan="1" tabindex="-1" style="min-width: 200px; max-width: 200px; min-height: 52px; max-height: 52px;"><div class="MuiDataGrid-cellContent">urn:rmz:1.2.643.5.1.13.13.11.1033</div></div></div></div></div></div></div><div class="Mui-resizeTriggers"><div class="expand-trigger"><div style="width: 1015px; height: 346px;"></div></div><div class="contract-trigger"></div></div></div><div><div class="MuiDataGrid-footerContainer css-1yy0dv2"><div></div><div class="MuiTablePagination-root css-whi0l6"><div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-8nphli"><div class="MuiTablePagination-spacer css-1mrwq1p"></div><p class="MuiTablePagination-displayedRows css-1chpzqh">1–25 of 696</p><div class="MuiTablePagination-actions"><button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1deacqj" tabindex="-1" type="button" disabled="" aria-label="Go to previous page" title="Go to previous page"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowLeftIcon"><path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path></svg></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1deacqj" tabindex="0" type="button" aria-label="Go to next page" title="Go to next page"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowRightIcon"><path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div></div></div></div></div></div></div></div></div><div class="MuiTabPanel-root css-19kzrtu" hidden="" role="tabpanel" aria-labelledby="mui-p-70586-T-DATASET" id="mui-p-70586-P-DATASET"></div><div class="MuiTabPanel-root css-19kzrtu" hidden="" role="tabpanel" aria-labelledby="mui-p-70586-T-DOMAINS" id="mui-p-70586-P-DOMAINS"></div><div class="MuiTabPanel-root css-19kzrtu" hidden="" role="tabpanel" aria-labelledby="mui-p-70586-T-SCHEDULE" id="mui-p-70586-P-SCHEDULE"></div><div class="MuiTabPanel-root css-19kzrtu" hidden="" role="tabpanel" aria-labelledby="mui-p-70586-T-EXT" id="mui-p-70586-P-EXT"></div><div class="MuiTabPanel-root css-19kzrtu" hidden="" role="tabpanel" aria-labelledby="mui-p-70586-T-LOAD" id="mui-p-70586-P-LOAD"></div></div></div></div></main></div></div>
+    
+  
+
+<iframe src="https://svp-keycloak.element-lab.ru/realms/dictionary/protocol/openid-connect/login-status-iframe.html" title="keycloak-session-iframe" style="display: none;"></iframe></body></html>
