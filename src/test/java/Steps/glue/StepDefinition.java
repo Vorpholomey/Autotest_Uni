@@ -17,10 +17,10 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class StepDefinition {
 
-    @Когда("Открываем админпанель и авторизовываемся")
-    public void открываем_админпанель_и_авторизовываемся() {
+    @Когда("Открываем админпанель и авторизовываемся, адрес {string}")
+    public void открываем_админпанель_и_авторизовываемся(String url) {
         Configuration.headless = true;
-        open("http://192.168.100.39/");
+        open(url);
         $(By.id("username")).setValue("rzhulin");
         $(By.id("password")).setValue("voodoo");
         $(By.id("kc-login")).click();
